@@ -1,15 +1,7 @@
-import _ from 'lodash';
 import './style.css';
+import fetchData from './modules/displayItems.js';
 
-function component() {
-  const element = document.createElement('div');
+fetchData();
 
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-
-  return element;
-}
-
-document.body.appendChild(component());
-
+const img = document.getElementById('logo-img');
+// img.src = require('../sources/logo.png');

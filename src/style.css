@@ -1,7 +1,275 @@
-body {
-    background-color: bisque;
+@import url('https://fonts.googleapis.com/css2?family=Puritan&family=Roboto&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Alkatra", cursive;
 }
 
-.hello {
-    color: red;
-  }
+body {
+  background-image: linear-gradient(60deg, rgb(252, 0, 255) 0%, rgb(0, 219, 222) 100%);
+  background-repeat: no-repeat;
+}
+
+.nav {
+  color: #2600c1;
+  display: flex;
+  padding: 10px 30px;
+  justify-content: space-between;
+  width: 100%;
+  background: #f1f1f1;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #2600c1;
+  font-size: x-large;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  text-shadow: 2px 10px 4px #000;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.smoothie-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2em;
+  gap: 10%;
+}
+
+.smoothie-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10%;
+}
+
+.myCard {
+  width: 17em;
+  height: auto;
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  border-radius: 25px;
+  background: #1f1e24;
+  box-shadow: 0 0 0.5em #0000;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardImg {
+  width: 12em;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid black;
+  border-radius: 20px;
+  margin-bottom: 3%;
+}
+
+.cardTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #fff;
+}
+
+.interation {
+  display: flex;
+  flex-direction: column;
+}
+
+.likeBtn {
+  background: none;
+  border: none;
+  font-size: 1.7em;
+  cursor: pointer;
+}
+
+.likeCounter {
+  font-size: 1.5em;
+  text-align: center;
+  color: #ffff;
+  margin: 2px;
+}
+
+.fa-thumbs-up::before {
+  content: "\f164";
+  color: wheat;
+}
+
+#closeBtn {
+  font-size: 40px;
+  font-weight: 400;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  align-self: self-end;
+  padding: 0 10px;
+  top: 0;
+}
+
+.popup {
+  padding: 0;
+}
+
+.dialog-container {
+  position: fixed;
+  border-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ef5350;
+  width: 60vw;
+  border-radius: 2%;
+  margin: auto;
+  padding: 2%;
+  gap: 2%;
+}
+
+#popup-img {
+  width: 20%;
+  background-color: #fff;
+  border-radius: 3rem;
+}
+
+.comments-list {
+  height: 200px;
+}
+
+.comments-topic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #fff;
+  padding-top: 3%;
+}
+
+.comments-btn {
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  gap: 12px;
+  width: auto;
+  color: #fff;
+}
+
+.contents {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: auto;
+  color: #fff;
+  font-size: 16px;
+}
+
+.comments-display {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  align-self: self-start;
+}
+
+.comments-number {
+  align-self: center;
+}
+
+#list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+}
+
+form,
+#add-comments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+  width: 100%;
+}
+
+form > input,
+form > textarea {
+  padding: 5px 0 5px 8px;
+  border: 2px solid #000;
+  border-radius: 0.1rem;
+}
+
+#name {
+  width: 70%;
+}
+
+#submit {
+  align-self: self-start;
+  border: 2px solid #000;
+  box-shadow: 10px 10px 8px 1px #000;
+  padding: 5px;
+  border-radius: 7px;
+}
+
+.display-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  border-color: transparent;
+  background: #8b8b8b;
+  width: 60%;
+  height: 100vh;
+  border-radius: 2rem;
+  margin: auto;
+  padding: 0 0 20px 0;
+  gap: 5px;
+}
+
+.no-scroll {
+  overflow: hidden;
+  position: sticky;
+}
+
+footer {
+  height: 0;
+  width: 100%;
+}
+
+footer h5 {
+  color: #fff;
+  background: #2600c1;
+  padding: 20px;
+}

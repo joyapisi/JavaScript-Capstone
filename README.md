@@ -1,4 +1,4 @@
-# Leaderboard
+# JavaScript Capstone Project
 
 HTML, CSS, JavaScript, webpack and API Project
 <a name="readme-top"></a>
