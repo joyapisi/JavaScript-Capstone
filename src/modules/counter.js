@@ -1,5 +1,5 @@
-const itemsCounter = (count, counter) => {
+const itemsCount = (count, counter) => {
   counter.innerHTML = `Items count = ${count}`;
   return count;
 };
-export default itemsCounter;
+export default itemsCount;
